@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>Login</h2>
+
+<hr>
+
+
+@using (Html.BeginForm())
+{ 
+
+
+@Html.Label("Enter Username")
+@Html.TextBox("Username", "", new { @class = "form-control", placeholder = "Username" })
+<br>
+@Html.Label("Enter Password")
+@Html.Password("password", "", new { @class = "form-control", placeholder = "Password" })
+<br>
+<input class="btn" type="submit">
+
+}
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
